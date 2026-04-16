@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Proyek | Ridhwan Naufal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">My<span>Project</span></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="projects.html" class="active">Proyek</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Galeri & Proyek</h1>
+        <p>Berikut adalah karya terbaru yang telah saya kerjakan bersama tim maupun personal.</p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="gambar/foto3.jpg" alt="Proyek 1">
+                <div class="project-info">
+                    <h3>Technopreneur Design</h3>
+                    <p>Website digital yang menggunakan teknologi inovatif.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="gambar/foto4.jpg" alt="Proyek 2">
+                <div class="project-info">
+                    <h3>Portfolio Fotografer</h3>
+                    <p>Website gallery dengan lightbox dan grid dinamis.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="gambar/foto5.jpg" alt="Proyek 3">
+                <div class="project-info">
+                    <h3>Landing Page UMKM</h3>
+                    <p>Desain modern dan konversi tinggi untuk brand lokal.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>&copy; 2026 Ridhwan Naufal | Portofolio Kreatif</div>
+            <div><a href="#" style="color: white; text-decoration: none;">@MyProject</a></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle')?.addEventListener('click', () => {
+            document.getElementById('navMenu')?.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

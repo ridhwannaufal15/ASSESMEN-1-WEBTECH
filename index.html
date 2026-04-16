@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ridhwan Naufal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">My<span>Portofolio</span></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="projects.html">Proyek</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Halo, Saya Ridhwan Naufal</h1>
+            <p class="intro-text">UI/UX Designer & Frontend Developer. Menciptakan pengalaman digital yang bermakna dan estetik.</p>
+            <a href="projects.html" class="btn">Lihat Proyek</a>
+        </section>
+
+        <div class="profile-center">
+            <img src="gambar/foto.jpg" alt="Foto Profil Ridhwan Naufal" class="profile-image">
+            <div class="profile-caption">
+                <div class="profile-name">Ridhwan Naufal</div>
+                <div class="profile-title">UI/UX Designer & Frontend Developer</div>
+                <div class="profile-bio">
+                    Mahasiswa Universitas Ary Ginanjar yang antusias dalam menciptakan pengalaman digital yang bermakna.
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Kreatif, Fungsional, & Modern</h2>
+            <p>Saya Ridhwan Naufal, Mahasiswa Universitas Ary Ginanjar. Meskipun ini adalah proyek pertama saya di dunia desain antarmuka dan pengembangan web, saya memiliki ketertarikan dan semangat belajar yang besar. Saya percaya bahwa desain yang baik, meskipun sederhana, tetap harus mengutamakan kolaborasi antara estetika dan kemudahan penggunaan.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-copyright">
+                &copy; 2026 Ridhwan Naufal | Portofolio Kreatif
+            </div>
+            <div class="social-links">
+                <a href="#">@MyProject</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('navMenu');
+        if (toggle) {
+            toggle.addEventListener('click', () => nav.classList.toggle('active'));
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Ridhwan Naufal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">My<span>Profile</span></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html" class="active">Profil</a></li>
+                <li><a href="projects.html">Proyek</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="font-size: 2rem; margin: 1.5rem 0 0.5rem;">Tentang Saya</h1>
+
+        <div class="profile-wrapper">
+            <div class="profile-image-card">
+                <img src="gambar/foto2.jpg" alt="Foto Profil Ridhwan Naufal">
+            </div>
+            <div class="profile-details">
+                <p>Saya Ridhwan Naufal, Mahasiswa Universitas Ary Ginanjar. Meskipun ini adalah proyek pertama saya di dunia desain antarmuka dan pengembangan web, saya memiliki ketertarikan dan semangat belajar yang besar. Saya percaya bahwa desain yang baik, meskipun sederhana, tetap harus mengutamakan kolaborasi antara estetika dan kemudahan penggunaan.</p>
+
+                <table class="info-table">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>Ridhwan Naufal Syahman</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat, Tanggal Lahir</th>
+                        <td>Yogyakarta, 15 Juli 2006</td>
+                    </tr>
+                    <tr>
+                        <th>Pendidikan Saat Ini</th>
+                        <td>S1 Sistem Informasi - Ary Ginanjar</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>ridhwannaufal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Keahlian Utama</th>
+                        <td>Basis Data, Web Developer, UI/UX Designer</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div>&copy; 2026 Ridhwan Naufal | Portofolio Kreatif</div>
+            <div><a href="#" style="color: white; text-decoration: none;">@MyProject</a></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle')?.addEventListener('click', () => {
+            document.getElementById('navMenu')?.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
